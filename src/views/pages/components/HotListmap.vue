@@ -126,6 +126,7 @@ export default {
             .flex_wrap{
                 white-space: nowrap;
                 overflow-x:auto;
+                overflow-y: hidden;
             }
             .hot__list-item{
                 display: inline-block;

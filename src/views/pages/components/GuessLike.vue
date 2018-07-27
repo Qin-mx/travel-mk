@@ -13,7 +13,20 @@
                 <p class="text">{{item.text}}</p>
                 <p class="start">
                     <span class="start-box">
-                        <span></span>
+                        <span>
+                            <i class="iconfont icon-xingxing"></i>
+                            <i class="iconfont icon-xingxing"></i>
+                            <i class="iconfont icon-xingxing"></i>
+                            <i class="iconfont icon-xingxing"></i>
+                            <i class="iconfont icon-xingxing"></i>
+                        </span>
+                        <span class="start-background">
+                            <i class="iconfont icon-xingxing"></i>
+                            <i class="iconfont icon-xingxing"></i>
+                            <i class="iconfont icon-xingxing"></i>
+                            <i class="iconfont icon-xingxing"></i>
+                            <i class="iconfont icon-xingxing"></i>
+                        </span>
                     </span>
                     <span>{{item.comment}}条评论</span>
                 </p>
@@ -116,6 +129,7 @@ export default {
     }
      .icon-xinheart118{
         color:#ff8a43;
+        font-size:0.24rem;
     }
 .guess_like_list{
     display: flex;
@@ -197,6 +211,18 @@ export default {
         font-size: 0.24rem;
         color: #f55;
         line-height: 0.44rem;
+    }
+    .start-box{
+        position: relative;
+        top: -3px;
+        margin-right: 0.1rem;
+        width: 100%;
+        .start-background{
+            position: absolute;
+            left: 0;
+            top: -1px;
+            color: #ffb436 !important;
+        }
     }
 }
 </style>
