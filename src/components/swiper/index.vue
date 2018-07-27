@@ -82,7 +82,7 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
- * { touch-action: pan-y; }
+
  img{
    width: 100%;
  }
