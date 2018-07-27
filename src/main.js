@@ -7,6 +7,7 @@ import FastClick from 'fastclick'
 
 import './assets/styles/reset.css' // 处理默认样式
 import './assets/styles/border.css' // 处理1像素
+import '../static/iconfont/iconfont.css'
 
 Vue.config.productionTip = false
 
