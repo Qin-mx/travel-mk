@@ -2,8 +2,8 @@
     <div class="hot__list">
         <div class="hot_list_bg">
             <div class="title">
-                <h3>本周热门榜单</h3>
-                <span>全部榜单</span>
+                <h3><i class="iconfont icon-icon-test"></i>本周热门榜单</h3>
+                <!-- <span>全部榜单</span> -->
             </div>
             <div class="flex_wrap">
                 <div class="hot__list-item" v-for="item in hotListmap" :key="item.id">
@@ -97,6 +97,9 @@ export default {
 
 <style scoped lang="scss">
     @import 'assets/styles/mixins.scss';
+    .icon-icon-test{
+        color:#ff8a43;
+    }
     .hot__list{
         background: #f5f5f5;
         padding: 0.2rem 0;

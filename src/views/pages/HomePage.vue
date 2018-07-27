@@ -9,10 +9,10 @@
         <!-- 定位失败 -->
         <ul class="list-con">
           <li class="item">
-            定位失败
+            <i class="iconfont icon-htmal5icon14"></i>定位失败
           </li>
           <li class="item">
-            玩水季
+            <i class="iconfont icon-wanggediqiu"></i>玩水季
           </li>
         </ul>
         <!-- 人气榜单 -->
@@ -61,6 +61,10 @@ export default {
     text-align: center;
     &:nth-child(1){
       border-right:1px solid#f1f1f1;
+    }
+    .iconfont{
+      font-size: 0.32rem;
+      color: rgb(167, 161, 161);
     }
   }
 }

@@ -1,7 +1,7 @@
 <template>
     <div class="guess_like">
         <div class="title">
-            <h3>猜你喜欢</h3>
+            <h3><i class="iconfont icon-xinheart118"></i>猜你喜欢</h3>
         </div>
 
         <div class="guess_like_list" v-for="item in LikeList" :key="item.id">
@@ -113,6 +113,9 @@ export default {
         h3{
             margin-left:0.3rem;
         }
+    }
+     .icon-xinheart118{
+        color:#ff8a43;
     }
 .guess_like_list{
     display: flex;
