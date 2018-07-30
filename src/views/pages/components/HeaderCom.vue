@@ -1,16 +1,20 @@
 <template>
     <div>
         <header class="header">
-            <div class="header-left">
-                <i class="iconfont icon-jiantou"></i>
-            </div>
+            <router-link to="/">
+                <div class="header-left">
+                    <i class="iconfont icon-jiantou"></i>
+                </div>
+            </router-link>
             <div class="header-content">
                 <i class="iconfont icon-sousuo"></i>
                 <span>输入城市/景点/游玩主题</span>
             </div>
             <div class="header-right">
-                <span>城市</span>
-                <i class="iconfont icon-sanjiao"></i>
+                <router-link to="/city">
+                    <span>城市</span>
+                    <i class="iconfont icon-sanjiao"></i>
+                </router-link>
             </div>
         </header>
     </div>
@@ -30,8 +34,8 @@ export default {
     .header{
         display: flex;
         flex-direction: row;
-        height: 0.86rem;
-        line-height: 0.86rem;
+        height: $headerheight;
+        line-height: $headerheight;
         background: $bg;
         color: #fff;
         .icon{
