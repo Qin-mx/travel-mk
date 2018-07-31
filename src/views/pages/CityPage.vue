@@ -12,9 +12,9 @@
         <!-- 搜索框 -->
         <city-search></city-search>
         <!-- 列表 -->
-        <city-list></city-list>
+        <city-list :hotList="hotList" :cityList="cityList" :letter="letter"></city-list>
         <!-- 字母表 -->
-        <city-alphabet></city-alphabet>
+        <city-alphabet :cityList="cityList" @handleCityListStatus="handleCityListStatus"></city-alphabet>
     </div>
 </template>
 
@@ -28,6 +28,35 @@ export default {
     CitySearch,
     CityList,
     CityAlphabet
+  },
+  data () {
+    return {
+      hotList: [],
+      cityList: {},
+      letter: ''
+    }
+  },
+  mounted () {
+    this.GetCityList()
+  },
+  methods: {
+    GetCityList () {
+      this.axios.get('/api/city.json').then(res => {
+        if (res.data.ret && res.data) {
+          this.handleCityList(res)
+        }
+      }).catch(err => {
+        console.log(err)
+      })
+    },
+    handleCityList (res) {
+      this.hotList = res.data.data.hotCities
+      this.cityList = res.data.data.cities
+    },
+    // 处理点击右侧导航
+    handleCityListStatus (key) {
+      this.letter = key
+    }
   }
 }
 </script>

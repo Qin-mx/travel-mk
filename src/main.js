@@ -4,10 +4,13 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import FastClick from 'fastclick'
+import axios from 'axios'
 
 import './assets/styles/reset.css' // 处理默认样式
 import './assets/styles/border.css' // 处理1像素
 import '../static/iconfont/iconfont.css'
+
+Vue.prototype.axios = axios
 
 Vue.config.productionTip = false
 

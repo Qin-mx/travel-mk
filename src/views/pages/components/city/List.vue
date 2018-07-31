@@ -12,172 +12,15 @@
             <div class="area">
                 <div class="title border-topbottom">热门城市</div>
                 <div class="btn-list">
-                    <div class="btn-wrap">
-                        <div class="btn">北京</div>
-                    </div>
-                    <div class="btn-wrap">
-                        <div class="btn">北京</div>
-                    </div>
-                    <div class="btn-wrap">
-                        <div class="btn">北京</div>
-                    </div>
-                    <div class="btn-wrap">
-                        <div class="btn">北京</div>
-                    </div>
-                    <div class="btn-wrap">
-                        <div class="btn">北京</div>
-                    </div>
-                    <div class="btn-wrap">
-                        <div class="btn">北京</div>
-                    </div>
-                    <div class="btn-wrap">
-                        <div class="btn">北京</div>
+                    <div class="btn-wrap" v-for="item in hotList" :key="item.id">
+                        <div class="btn">{{item.name}}</div>
                     </div>
                 </div>
             </div>
-             <div class="area">
-                <div class="title border-topbottom">热门城市</div>
-                <div class="btn-list">
-                    <div class="btn-wrap">
-                        <div class="btn">北京</div>
-                    </div>
-                    <div class="btn-wrap">
-                        <div class="btn">北京</div>
-                    </div>
-                    <div class="btn-wrap">
-                        <div class="btn">北京</div>
-                    </div>
-                    <div class="btn-wrap">
-                        <div class="btn">北京</div>
-                    </div>
-                    <div class="btn-wrap">
-                        <div class="btn">北京</div>
-                    </div>
-                    <div class="btn-wrap">
-                        <div class="btn">北京</div>
-                    </div>
-                    <div class="btn-wrap">
-                        <div class="btn">北京</div>
-                    </div>
-                </div>
-            </div>
-             <div class="area">
-                <div class="title border-topbottom">热门城市</div>
-                <div class="btn-list">
-                    <div class="btn-wrap">
-                        <div class="btn">北京</div>
-                    </div>
-                    <div class="btn-wrap">
-                        <div class="btn">北京</div>
-                    </div>
-                    <div class="btn-wrap">
-                        <div class="btn">北京</div>
-                    </div>
-                    <div class="btn-wrap">
-                        <div class="btn">北京</div>
-                    </div>
-                    <div class="btn-wrap">
-                        <div class="btn">北京</div>
-                    </div>
-                    <div class="btn-wrap">
-                        <div class="btn">北京</div>
-                    </div>
-                    <div class="btn-wrap">
-                        <div class="btn">北京</div>
-                    </div>
-                </div>
-            </div>
-             <div class="area">
-                <div class="title border-topbottom">热门城市</div>
-                <div class="btn-list">
-                    <div class="btn-wrap">
-                        <div class="btn">北京</div>
-                    </div>
-                    <div class="btn-wrap">
-                        <div class="btn">北京</div>
-                    </div>
-                    <div class="btn-wrap">
-                        <div class="btn">北京</div>
-                    </div>
-                    <div class="btn-wrap">
-                        <div class="btn">北京</div>
-                    </div>
-                    <div class="btn-wrap">
-                        <div class="btn">北京</div>
-                    </div>
-                    <div class="btn-wrap">
-                        <div class="btn">北京</div>
-                    </div>
-                    <div class="btn-wrap">
-                        <div class="btn">北京</div>
-                    </div>
-                </div>
-            </div>
-             <div class="area">
-                <div class="title border-topbottom">热门城市</div>
-                <div class="btn-list">
-                    <div class="btn-wrap">
-                        <div class="btn">北京</div>
-                    </div>
-                    <div class="btn-wrap">
-                        <div class="btn">北京</div>
-                    </div>
-                    <div class="btn-wrap">
-                        <div class="btn">北京</div>
-                    </div>
-                    <div class="btn-wrap">
-                        <div class="btn">北京</div>
-                    </div>
-                    <div class="btn-wrap">
-                        <div class="btn">北京</div>
-                    </div>
-                    <div class="btn-wrap">
-                        <div class="btn">北京</div>
-                    </div>
-                    <div class="btn-wrap">
-                        <div class="btn">北京</div>
-                    </div>
-                </div>
-            </div>
-            <div class="area">
-                <div class="title border-topbottom">A</div>
+            <div class="area" v-for=" (item,key) in cityList" :key="key" :ref="key">
+                <div class="title border-topbottom" >{{key}}</div>
                 <ul class="city-list">
-                    <li>阿坝藏族羌族自治州</li>
-                    <li>阿克苏地区</li>
-                    <li>阿拉尔</li>
-                    <li>阿拉善盟</li>
-                    <li>阿勒泰</li>
-                    <li>阿坝藏族羌族自治州</li>
-                    <li>阿克苏地区</li>
-                    <li>阿拉尔</li>
-                    <li>阿拉善盟</li>
-                    <li>阿勒泰</li>
-                </ul>
-                <div class="title border-topbottom">A</div>
-                <ul class="city-list">
-                    <li>阿坝藏族羌族自治州</li>
-                    <li>阿克苏地区</li>
-                    <li>阿拉尔</li>
-                    <li>阿拉善盟</li>
-                    <li>阿勒泰</li>
-                    <li>阿坝藏族羌族自治州</li>
-                    <li>阿克苏地区</li>
-                    <li>阿拉尔</li>
-                    <li>阿拉善盟</li>
-                    <li>阿勒泰</li>
-                </ul>
-                <div class="title border-topbottom">A</div>
-                <ul class="city-list">
-                    <li>阿坝藏族羌族自治州</li>
-                    <li>阿克苏地区</li>
-                    <li>阿拉尔</li>
-                    <li>阿拉善盟</li>
-                    <li>阿勒泰</li>
-                    <li>阿坝藏族羌族自治州</li>
-                    <li>阿克苏地区</li>
-                    <li>阿拉尔</li>
-                    <li>阿拉善盟</li>
-                    <li>阿勒泰</li>
+                    <li v-for="city in item" :key="city.id">{{city.name}}</li>
                 </ul>
             </div>
         </div>
@@ -187,11 +30,28 @@
 <script>
 import BScroll from 'better-scroll'
 export default {
+  props: {
+    hotList: {
+      type: Array
+    },
+    cityList: {
+      type: Object
+    },
+    letter: {
+      type: String
+    }
+  },
+  watch: {
+    letter () {
+      if (this.letter) {
+        let ele = this.$refs[this.letter][0]
+        this.scroll.scrollToElement(ele)
+      }
+    }
+  },
   mounted () {
     this.$nextTick(() => {
       this.scroll = new BScroll(this.$refs.wrapper)
-
-      console.log(this.scroll)
     })
   }
 }
