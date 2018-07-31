@@ -10,7 +10,7 @@
         </header>
 
         <!-- 搜索框 -->
-        <city-search></city-search>
+        <city-search :cityList="cityList"></city-search>
         <!-- 列表 -->
         <city-list :hotList="hotList" :cityList="cityList" :letter="letter"></city-list>
         <!-- 字母表 -->

@@ -20,7 +20,7 @@
             <div class="area" v-for=" (item,key) in cityList" :key="key" :ref="key">
                 <div class="title border-topbottom" >{{key}}</div>
                 <ul class="city-list">
-                    <li v-for="city in item" :key="city.id">{{city.name}}</li>
+                    <li v-for="city in item" :key="city.id" @click="chooseCity(city.name)">{{city.name}}</li>
                 </ul>
             </div>
         </div>
@@ -53,6 +53,11 @@ export default {
     this.$nextTick(() => {
       this.scroll = new BScroll(this.$refs.wrapper)
     })
+  },
+  methods: {
+    chooseCity (val) {
+      console.log(val)
+    }
   }
 }
 </script>
