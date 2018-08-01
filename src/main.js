@@ -6,6 +6,7 @@ import router from './router'
 import FastClick from 'fastclick'
 import axios from 'axios'
 
+import store from './store'
 import './assets/styles/reset.css' // 处理默认样式
 import './assets/styles/border.css' // 处理1像素
 import '../static/iconfont/iconfont.css'
@@ -21,6 +22,7 @@ FastClick.attach(document.body)
 new Vue({
   el: '#app',
   router,
+  store,
   components: { App },
   template: '<App/>'
 })

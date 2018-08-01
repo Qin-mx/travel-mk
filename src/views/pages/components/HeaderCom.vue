@@ -12,7 +12,7 @@
             </div>
             <div class="header-right">
                 <router-link to="/city">
-                    <span>城市</span>
+                    <span>{{city}}</span>
                     <i class="iconfont icon-sanjiao"></i>
                 </router-link>
             </div>
@@ -21,10 +21,16 @@
 </template>
 
 <script>
+import {mapState} from 'vuex'
 export default {
   data () {
     return {
     }
+  },
+  computed: {
+    ...mapState([
+      'city'
+    ])
   }
 }
 </script>
@@ -69,9 +75,12 @@ export default {
             }
         }
         .header-right{
-            padding: 0 0.22rem;
-            width: 0.84rem;
             position: relative;
+            max-width: 1.82rem;
+            span{
+                display: block;
+                padding:0 0.5rem 0 0.2rem
+            }
             .icon-sanjiao{
                 display: inline-block;
                 transform: scale(0.5);

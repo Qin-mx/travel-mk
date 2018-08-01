@@ -7,7 +7,9 @@
         <div class="search-content" ref="wrapper" v-show="keyword">
             <ul>
                 <li class="border-bottom" v-if="!list.length">当前数据不存在</li>
-                <li v-for="item in list" :key="item.id" v-else class="border-bottom">{{item.name}}</li>
+                <li v-for="item in list" :key="item.id" v-else class="border-bottom" @click="changeCity(item.name)">
+                  {{item.name}}
+                </li>
             </ul>
         </div>
     </div>
@@ -44,13 +46,24 @@ export default {
         for (let i in this.cityList) {
           this.cityList[i].forEach(v => {
             if (v.name.indexOf(this.keyword) > -1 || v.spell.indexOf(this.keyword) > -1) {
-              result.push(v)
+              result.push({
+                name: v.name,
+                id: v.id,
+                spell: v.spell
+              })
             }
           })
         }
         this.list = result
       }, 100)
+    },
+    changeCity (val) {
+      this.$store.commit('changeCity', val)
+      localStorage.setItem('city', val)
+      // this.keyword = ''
+      this.$router.push('/')
     }
+
   }
 }
 </script>

@@ -5,7 +5,7 @@
                 <div class="title border-topbottom">当前城市</div>
                 <div class="btn-list">
                     <div class="btn-wrap">
-                        <div class="btn">北京</div>
+                        <div class="btn" @click="handlechangeCity(city)">{{city}}</div>
                     </div>
                 </div>
             </div>
@@ -13,14 +13,14 @@
                 <div class="title border-topbottom">热门城市</div>
                 <div class="btn-list">
                     <div class="btn-wrap" v-for="item in hotList" :key="item.id">
-                        <div class="btn">{{item.name}}</div>
+                        <div class="btn" @click="handlechangeCity(item.name)">{{item.name}}</div>
                     </div>
                 </div>
             </div>
             <div class="area" v-for=" (item,key) in cityList" :key="key" :ref="key">
                 <div class="title border-topbottom" >{{key}}</div>
                 <ul class="city-list">
-                    <li v-for="city in item" :key="city.id" @click="chooseCity(city.name)">{{city.name}}</li>
+                    <li v-for="city in item" :key="city.id" @click="handlechangeCity(city.name)" >{{city.name}}</li>
                 </ul>
             </div>
         </div>
@@ -29,6 +29,7 @@
 
 <script>
 import BScroll from 'better-scroll'
+import {mapState, mapMutations} from 'vuex'
 export default {
   props: {
     hotList: {
@@ -40,6 +41,11 @@ export default {
     letter: {
       type: String
     }
+  },
+  computed: {
+    ...mapState([
+      'city'
+    ])
   },
   watch: {
     letter () {
@@ -55,9 +61,18 @@ export default {
     })
   },
   methods: {
-    chooseCity (val) {
-      console.log(val)
-    }
+    handlechangeCity (val) {
+      // 第一种方式:通过修改actions的值，来同步修改
+    //   this.$store.dispatch('changeCity', val)
+      //   第二种，直接修改mutations
+    //   this.$store.commit('changeCity', val)
+      //   第三种方式
+      this.changeCity(val)
+      this.$router.push('/')
+      // 保存到本地
+      localStorage.setItem('city', val)
+    },
+    ...mapMutations(['changeCity'])
   }
 }
 </script>
