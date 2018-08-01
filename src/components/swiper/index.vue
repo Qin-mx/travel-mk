@@ -18,6 +18,11 @@ export default {
     swiper,
     swiperSlide
   },
+  props: {
+    swiperSlides: {
+      type: Array
+    }
+  },
   data () {
     return {
       swiperOption: {
@@ -31,49 +36,7 @@ export default {
           stopOnLastSlide: false,
           disableOnInteraction: false
         }
-      },
-      swiperSlides: [
-        {
-          id: 1,
-          imgUrl: 'http://img1.qunarzz.com/piao/fusion/1807/66/e5a5cec881702f02.jpg_750x200_67bb5691.jpg',
-          title: '去哪儿门票'
-        },
-        {
-          id: 2,
-          imgUrl: 'http://img1.qunarzz.com/piao/fusion/1807/c6/44fce1467be17702.jpg_750x200_406f5fc3.jpg',
-          title: '去哪儿门票'
-        },
-        {
-          id: 3,
-          imgUrl: 'http://img1.qunarzz.com/piao/fusion/1806/3c/c72a1ccd4d7b2202.jpg_750x200_b88bbab4.jpg',
-          title: '去哪儿门票'
-        },
-        {
-          id: 4,
-          imgUrl: 'http://img1.qunarzz.com/piao/fusion/1806/3c/c72a1ccd4d7b2202.jpg_750x200_b88bbab4.jpg',
-          title: '去哪儿门票'
-        },
-        {
-          id: 5,
-          imgUrl: 'http://img1.qunarzz.com/piao/fusion/1807/e0/b59ec01d6992e202.jpg_750x200_db9cc3d8.jpg',
-          title: '去哪儿门票'
-        },
-        {
-          id: 6,
-          imgUrl: 'http://img1.qunarzz.com/piao/fusion/1806/c5/8f384b861e4e9e02.jpg_750x200_29d574ba.jpg',
-          title: '去哪儿门票'
-        },
-        {
-          id: 7,
-          imgUrl: 'http://img1.qunarzz.com/piao/fusion/1807/ec/278a34afb59a0d02.jpg_750x200_3292a705.jpg',
-          title: '去哪儿门票'
-        },
-        {
-          id: 8,
-          imgUrl: 'http://img1.qunarzz.com/piao/fusion/1807/22/382624cbe97b0502.jpg_750x200_36a074d6.jpg',
-          title: '去哪儿门票'
-        }
-      ]
+      }
     }
   },
   mounted () {

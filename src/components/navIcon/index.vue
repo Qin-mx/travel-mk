@@ -4,9 +4,9 @@
             <swiper-slide v-for="(page,index) in pages" :key="index">
                 <div class="icon" v-for="item in page" :key="item.id">
                     <a class="imgbox">
-                        <img :src="item.url" :alt="item.title">
+                        <img :src="item.imgUrl" :alt="item.desc">
                     </a>
-                    <span>{{item.title}}</span>
+                    <span>{{item.desc}}</span>
                 </div>
             </swiper-slide>
              <div class="swiper-pagination" slot="pagination"></div>
@@ -23,6 +23,11 @@ export default {
     swiper,
     swiperSlide
   },
+  props: {
+    navList: {
+      type: Array
+    }
+  },
   data () {
     return {
       swiperOption: {
@@ -30,60 +35,7 @@ export default {
           el: '.swiper-pagination',
           bulletElement: 'li'
         }
-      },
-      navList: [
-        {
-          id: 1,
-          title: '景点门票',
-          url: 'http://img1.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png'
-        },
-        {
-          id: 2,
-          title: '北京必游',
-          url: 'http://img1.qunarzz.com/piao/fusion/1804/ff/fdf170ee89594b02.png'
-        },
-        {
-          id: 3,
-          title: '夏日玩水',
-          url: 'http://img1.qunarzz.com/piao/fusion/1803/6a/45f595250c73d102.png'
-        },
-        {
-          id: 4,
-          title: '文化古迹',
-          url: 'http://img1.qunarzz.com/piao/fusion/1803/20/831d62d2e1c7be02.png'
-        },
-        {
-          id: 5,
-          title: '动植物园',
-          url: 'http://img1.qunarzz.com/piao/fusion/1803/76/eb88861d78fb9902.png'
-        },
-        {
-          id: 6,
-          title: '故宫',
-          url: 'http://img1.qunarzz.com/piao/fusion/1803/6c/9e54a8540fee0102.png'
-        },
-        {
-          id: 7,
-          title: '一日游',
-          url: 'http://img1.qunarzz.com/piao/fusion/1804/5a/13ceb38dcf262f02.png'
-        },
-        {
-          id: 8,
-          title: '公园',
-          url: 'http://img1.qunarzz.com/piao/fusion/1803/54/35899492b1302802.png'
-        },
-        {
-          id: 9,
-          title: '游乐场',
-          url: 'http://img1.qunarzz.com/piao/fusion/1803/95/8246f27355943202.png'
-        },
-        {
-          id: 10,
-          title: '全部玩乐',
-          url: 'http://img1.qunarzz.com/piao/fusion/1803/80/416c6ab3368d1f02.png'
-        }
-
-      ]
+      }
     }
   },
   computed: {

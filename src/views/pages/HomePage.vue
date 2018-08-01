@@ -3,9 +3,9 @@
       <!-- 头部 -->
         <header-com></header-com>
         <!-- 轮播图 -->
-        <header-swiper></header-swiper>
+        <header-swiper :swiperSlides="swiperSlides"></header-swiper>
         <!-- 分类导航 -->
-        <nav-icon></nav-icon>
+        <nav-icon :navList="iconList"></nav-icon>
         <!-- 定位失败 -->
         <ul class="list-con">
           <li class="item">
@@ -16,11 +16,11 @@
           </li>
         </ul>
         <!-- 人气榜单 -->
-        <hot-listmap></hot-listmap>
+        <hot-listmap :hotListmap="hotListmap"></hot-listmap>
         <!-- 猜你喜欢 -->
-        <guess-like></guess-like>
+        <guess-like :LikeList="LikeList"></guess-like>
         <!-- 周末去哪 -->
-        <weekend-list></weekend-list>
+        <weekend-list :weekendList="weekendList"></weekend-list>
     </div>
 </template>
 
@@ -31,6 +31,7 @@ import NavIcon from 'components/navIcon'
 import HotListmap from './components/HotListmap'
 import GuessLike from './components/GuessLike.vue'
 import WeekendList from './components/WeekendList.vue'
+import { mapState } from 'vuex'
 export default {
   name: 'homepage',
   components: {
@@ -43,7 +44,44 @@ export default {
   },
   data () {
     return {
-      key: 'value'
+      key: 'value',
+      swiperSlides: [],
+      iconList: [],
+      weekendList: [],
+      LikeList: [],
+      hotListmap: [],
+      lastCity: ''
+    }
+  },
+  activated () {
+    if (this.lastCity !== this.city) {
+      this.lastCity = this.city
+      this.getList()
+    }
+  },
+  computed: {
+    ...mapState([
+      'city'
+    ])
+  },
+  mounted () {
+    // 保存
+    this.lastCity = this.city
+    this.getList()
+  },
+  methods: {
+    getList () {
+      this.axios.get('/api/index.json?city=' + this.city).then(res => {
+        if (res.data.data && res.data.ret) {
+          this.swiperSlides = res.data.data.swiperSlides
+          this.iconList = res.data.data.iconList
+          this.weekendList = res.data.data.weekendList
+          this.LikeList = res.data.data.LikeList
+          this.hotListmap = res.data.data.hotListmap
+        }
+      }).catch(err => {
+        console.log(err)
+      })
     }
   }
 }

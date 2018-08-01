@@ -48,68 +48,9 @@
 
 <script>
 export default {
-  data () {
-    return {
-      LikeList: [
-        {
-          id: 1,
-          tag: 'https://img1.qunarzz.com/piao/fusion/1802/20/2ba6d10b17972e02.png',
-          tagtips: '随买随用',
-          url: 'http://img1.qunarzz.com/sight/p0/1803/12/126471e0966aca5ba3.img.jpg_200x200_f1286016.jpg',
-          text: '北京国际鲜花港',
-          start: '5',
-          comment: '18235',
-          price: '29.9',
-          address: '丰台区'
-        },
-        {
-          id: 2,
-          tag: 'https://img1.qunarzz.com/piao/fusion/1802/20/2ba6d10b17972e02.png',
-          tagtips: '随买随用',
-          url: 'http://img1.qunarzz.com/sight/p0/1709/e4/e48857f2ce5e53a7a3.img.jpg_200x200_8ee069fe.jpg',
-          text: '远去的恐龙',
-          start: '5',
-          comment: '422',
-          price: '140',
-          address: '朝阳区'
-        },
-        {
-          id: 3,
-          tag: 'https://img1.qunarzz.com/piao/fusion/1802/20/2ba6d10b17972e02.png',
-          tagtips: '随买随用',
-          url: 'http://img1.qunarzz.com/sight/p0/1508/a5/4003f9dd7bebf61eccbf64046e26d487.water.jpg_200x200_7690e4cd.jpg',
-          text: '北京欢乐谷',
-          start: '5',
-          comment: '55483',
-          price: '66.6',
-          address: '朝阳区',
-          add: '👍小伙伴们都收藏了，去看看吧~'
-        },
-        {
-          id: 4,
-          tag: 'https://img1.qunarzz.com/piao/fusion/1802/52/b9080e45b69b4f02.png',
-          tagtips: '可定明天',
-          url: 'http://img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_200x200_1bc99086.jpg',
-          text: '故宫',
-          start: '5',
-          comment: '249897',
-          price: '20',
-          address: '东城区',
-          add: '🔥好评如潮，小伙伴热推景点~'
-        },
-        {
-          id: 6,
-          tag: 'https://img1.qunarzz.com/piao/fusion/1802/20/2ba6d10b17972e02.png',
-          tagtips: '随买随用',
-          url: 'http://img1.qunarzz.com/sight/p0/201308/08/41150dacc0e3a0c8c8d65eac.jpg_200x200_c62292e9.jpg',
-          text: '北京动物园',
-          start: '5',
-          comment: '47770',
-          price: '39.9',
-          address: '西城区',
-          add: '百余种动物，让你离自然更近'
-        }
-      ]
+  props: {
+    LikeList: {
+      type: Array
     }
   }
 }
