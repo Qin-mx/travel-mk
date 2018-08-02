@@ -13,12 +13,11 @@
                 <p class="text">{{item.text}}</p>
                 <p class="start">
                     <span class="start-box">
-                        <span>
-                            <i class="iconfont icon-xingxing"></i><i class="iconfont icon-xingxing"></i><i class="iconfont icon-xingxing"></i><i class="iconfont icon-xingxing"></i><i class="iconfont icon-xingxing"></i>
-                        </span>
-                        <span class="start-background">
-                            <i class="iconfont icon-xingxing"></i><i class="iconfont icon-xingxing"></i><i class="iconfont icon-xingxing"></i><i class="iconfont icon-xingxing"></i><i class="iconfont icon-xingxing"></i>
-                        </span>
+                        <i class="iconfont icon-xingxing on"></i>
+                        <i class="iconfont icon-xingxing on"></i>
+                        <i class="iconfont icon-xingxing on"></i>
+                        <i class="iconfont icon-xingxing on"></i>
+                        <i class="iconfont icon-xingxing on"></i>
                     </span>
                     <span>{{item.comment}}条评论</span>
                 </p>
@@ -151,11 +150,13 @@ export default {
         position: relative;
         top: -1px;
         margin-right: 0.1rem;
-        .start-background{
-            position: absolute;
-            left: 0;
-            top: -1px;
-            color: #ffb436 !important;
+        .iconfont{
+            font-size: 0.24rem;
+            float: left;
+            color: #e0e0e0;
+            &.on{
+                color: #ffb436
+            }
         }
     }
 }
