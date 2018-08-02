@@ -12,7 +12,7 @@
         <div class="desc__back" :style="opacity" v-if="!isbgColor">俄么塘花海</div>
         <router-link to="/">
             <div class="desc__font-bg" :class="{'desc__font-bg-bg':isbgColor}">
-                <i class="iconfont icon-jiantou"></i>
+                <i class="iconfont icon-jiantou" :style="opacityIcon"></i>
             </div>
         </router-link>
     </div>
@@ -25,6 +25,9 @@ export default {
     return {
       opacity: {
         opacity: 0
+      },
+      opacityIcon: {
+        opacity: 1
       },
       isbgColor: true
     }
@@ -44,8 +47,12 @@ export default {
         let opacity = top / 140
         opacity = opacity > 1 ? 1 : opacity
         this.opacity = {opacity}
+        this.opacityIcon = {opacity}
       } else {
         this.isbgColor = true
+        this.opacityIcon = {
+          opacity: 1
+        }
       }
     }
   }
@@ -100,6 +107,7 @@ export default {
     background: $bg;
     color: #fff;
     text-align: center;
+    font-size: 0.32rem;
 }
 .desc__font-bg{
     width: 0.72rem;
