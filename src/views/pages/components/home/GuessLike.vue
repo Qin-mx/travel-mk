@@ -14,18 +14,10 @@
                 <p class="start">
                     <span class="start-box">
                         <span>
-                            <i class="iconfont icon-xingxing"></i>
-                            <i class="iconfont icon-xingxing"></i>
-                            <i class="iconfont icon-xingxing"></i>
-                            <i class="iconfont icon-xingxing"></i>
-                            <i class="iconfont icon-xingxing"></i>
+                            <i class="iconfont icon-xingxing"></i><i class="iconfont icon-xingxing"></i><i class="iconfont icon-xingxing"></i><i class="iconfont icon-xingxing"></i><i class="iconfont icon-xingxing"></i>
                         </span>
                         <span class="start-background">
-                            <i class="iconfont icon-xingxing"></i>
-                            <i class="iconfont icon-xingxing"></i>
-                            <i class="iconfont icon-xingxing"></i>
-                            <i class="iconfont icon-xingxing"></i>
-                            <i class="iconfont icon-xingxing"></i>
+                            <i class="iconfont icon-xingxing"></i><i class="iconfont icon-xingxing"></i><i class="iconfont icon-xingxing"></i><i class="iconfont icon-xingxing"></i><i class="iconfont icon-xingxing"></i>
                         </span>
                     </span>
                     <span>{{item.comment}}条评论</span>
@@ -81,8 +73,9 @@ export default {
         position: relative;
         width: 2rem;
         height: 2rem;
+        flex:  auto  0;
         img{
-            width: 100%;
+            // width: 100%;
             height: 100%;
         }
         .like-tag{
@@ -102,8 +95,8 @@ export default {
     .guess_like_list-desc{
         padding-left: 0.2rem;
         flex: 1;
+        width: 0;
         .text{
-            width: 5rem;
             margin-top: .26rem;
             height: .44rem;
             color: #212121;
@@ -114,9 +107,10 @@ export default {
         .start{
             margin-top: 0.14rem;
             height: .34rem;
+            display: flex;
+            flex-wrap: nowrap;
             span:last-child{
                 display: inline-block;
-                width: 2.2rem;
                 line-height: 0.34rem;
                 color:#616161;
                 @include ellipsis;
@@ -144,7 +138,7 @@ export default {
         }
     }
     .guess_like_list-add{
-        width: 5rem;
+        width: 100%;
         @include ellipsis;
         display: inline-block;
         margin-top:.44rem;
@@ -155,9 +149,8 @@ export default {
     }
     .start-box{
         position: relative;
-        top: -3px;
+        top: -1px;
         margin-right: 0.1rem;
-        width: 100%;
         .start-background{
             position: absolute;
             left: 0;

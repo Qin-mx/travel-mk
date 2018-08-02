@@ -25,12 +25,12 @@
 </template>
 
 <script>
-import HeaderCom from './components/HeaderCom'
+import HeaderCom from './components/home/HeaderCom'
 import HeaderSwiper from 'components/swiper'
 import NavIcon from 'components/navIcon'
-import HotListmap from './components/HotListmap'
-import GuessLike from './components/GuessLike.vue'
-import WeekendList from './components/WeekendList.vue'
+import HotListmap from './components/home/HotListmap'
+import GuessLike from './components/home/GuessLike.vue'
+import WeekendList from './components/home/WeekendList.vue'
 import { mapState } from 'vuex'
 export default {
   name: 'homepage',

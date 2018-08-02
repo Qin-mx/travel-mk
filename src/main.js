@@ -5,6 +5,8 @@ import App from './App'
 import router from './router'
 import FastClick from 'fastclick'
 import axios from 'axios'
+import 'babel-polyfill'
+// import 'lib-flexible' 处理移动端
 
 import store from './store'
 import './assets/styles/reset.css' // 处理默认样式
