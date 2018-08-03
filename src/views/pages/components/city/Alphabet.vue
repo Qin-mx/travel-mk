@@ -5,9 +5,9 @@
             v-for="item in letters"
             :key="item"
             @click="clickalphabet(item)"
-            @touchstart="handleTouchStart"
-            @touchmove="handleTouchMove"
-            @touchEnd="handleTouchEnd"
+            @touchstart.prevent="handleTouchStart"
+            @touchmove.prevent="handleTouchMove"
+            @touchEnd.prevent="handleTouchEnd"
             :ref='item'
         >
             {{item}}

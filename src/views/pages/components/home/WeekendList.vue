@@ -3,7 +3,7 @@
        <h3>周末去哪儿</h3>
        <div class="weekend_list" v-for="item in weekendList" :key="item.id">
            <div class="img">
-               <img :src="item.imgUrl" :alt="item.title">
+               <img :src="item.imgUrl" :alt="item.title" @click="targetdesc(item)">
            </div>
            <div class="desc">
                 <p>{{item.title}}</p>
@@ -18,6 +18,11 @@ export default {
   props: {
     weekendList: {
       type: Array
+    }
+  },
+  methods: {
+    targetdesc (item) {
+      this.$router.push({name: 'DescPage', params: {id: item.id}})
     }
   }
 }

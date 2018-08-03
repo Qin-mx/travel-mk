@@ -6,7 +6,7 @@
                 <!-- <span>全部榜单</span> -->
             </div>
             <div class="flex_wrap">
-                <div class="hot__list-item" v-for="item in hotListmap" :key="item.id">
+                <div class="hot__list-item" v-for="item in hotListmap" :key="item.id" @click="targetdesc(item)">
                     <div class="img_box">
                         <img v-if="item.tips" :src="item.tips" :alt="item.title" class="hot_tips">
                         <img :src="item.url" :alt="item.tips">
@@ -23,7 +23,12 @@
 
 <script>
 export default {
-  props: ['hotListmap']
+  props: ['hotListmap'],
+  methods: {
+    targetdesc (item) {
+      this.$router.push({name: 'DescPage', params: {id: item.id}})
+    }
+  }
 }
 </script>
 

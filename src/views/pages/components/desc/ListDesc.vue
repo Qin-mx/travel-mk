@@ -3,9 +3,9 @@
         <h3 class="title">门票</h3>
         <ul>
             <li class="border-top" v-for="item in list" :key="item.id">
-                <div class="desc__list-item">
+                <div class="desc__list-item"  @click="handleShowDesc(item)">
                     <p class="ellipsis2">{{item.title}}</p>
-                    <div class="price" @click="handleShowDesc(item)">
+                    <div class="price">
                         <span class="price-color">&yen;<span>76</span><em>起</em></span>
                         <i class="iconfont icon-jiantou" :class="{'roate':item.show}"></i>
                     </div>

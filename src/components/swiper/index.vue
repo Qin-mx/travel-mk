@@ -51,7 +51,7 @@ export default {
  }
 </style>
 
-<style lang="scss">
+<style lang="scss" scoped>
  .wrapper{
    width: 100%;
    overflow: hidden;

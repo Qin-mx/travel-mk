@@ -5,20 +5,14 @@
         </div>
 
         <div class="guess_like_list" v-for="item in LikeList" :key="item.id">
-            <div class="guess_like_list-img">
+            <div class="guess_like_list-img" @click="targetdesc(item)">
                 <div v-if="item.tag" class="like-tag" :style="'background-image:url('+item.tag+')'">{{item.tagtips}}</div>
                 <img :src="item.url" :alt="item.text">
             </div>
             <div class="guess_like_list-desc">
                 <p class="text">{{item.text}}</p>
                 <p class="start">
-                    <span class="start-box">
-                        <i class="iconfont icon-xingxing on"></i>
-                        <i class="iconfont icon-xingxing on"></i>
-                        <i class="iconfont icon-xingxing on"></i>
-                        <i class="iconfont icon-xingxing on"></i>
-                        <i class="iconfont icon-xingxing on"></i>
-                    </span>
+                    <stars></stars>
                     <span>{{item.comment}}条评论</span>
                 </p>
                 <div class="info">
@@ -38,10 +32,19 @@
 </template>
 
 <script>
+import Stars from 'components/Stars'
 export default {
   props: {
     LikeList: {
       type: Array
+    }
+  },
+  components: {
+    Stars
+  },
+  methods: {
+    targetdesc (item) {
+      this.$router.push({name: 'DescPage', params: {id: item.id}})
     }
   }
 }
@@ -108,6 +111,9 @@ export default {
             height: .34rem;
             display: flex;
             flex-wrap: nowrap;
+            span{
+                vertical-align: middle
+            }
             span:last-child{
                 display: inline-block;
                 line-height: 0.34rem;
@@ -145,19 +151,6 @@ export default {
         font-size: 0.24rem;
         color: #f55;
         line-height: 0.44rem;
-    }
-    .start-box{
-        position: relative;
-        top: -1px;
-        margin-right: 0.1rem;
-        .iconfont{
-            font-size: 0.24rem;
-            float: left;
-            color: #e0e0e0;
-            &.on{
-                color: #ffb436
-            }
-        }
     }
 }
 </style>
