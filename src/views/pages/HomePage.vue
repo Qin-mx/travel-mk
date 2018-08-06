@@ -71,7 +71,7 @@ export default {
   },
   methods: {
     getList () {
-      this.axios.get('/api/xfn1k?city=' + this.city).then(res => {
+      this.axios.get('/api/19xqqw?city=' + this.city).then(res => {
         if (res.data.data && res.data.ret) {
           this.swiperSlides = res.data.data.swiperSlides
           this.iconList = res.data.data.iconList

@@ -7,7 +7,7 @@ import DescPage from 'views/pages/DescPage'
 Vue.use(Router)
 
 export default new Router({
-  // mode: 'history',
+  // mode: 'history',s
   scrollBehavior (to, from, savedPosition) {
     return { x: 0, y: 0 }
   },
