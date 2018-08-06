@@ -1,0 +1,316 @@
+{
+  "ret": true,
+  "data": {
+      "swiperSlides": [
+          {
+              "id": "1",
+              "imgUrl": "http://img1.qunarzz.com/piao/fusion/1807/66/e5a5cec881702f02.jpg_750x200_67bb5691.jpg",
+              "title": "去哪儿门票"
+          },
+          {
+              "id": "2",
+              "imgUrl": "http://img1.qunarzz.com/piao/fusion/1807/c6/44fce1467be17702.jpg_750x200_406f5fc3.jpg",
+              "title": "去哪儿门票"
+          },
+          {
+              "id": "3",
+              "imgUrl": "http://img1.qunarzz.com/piao/fusion/1806/3c/c72a1ccd4d7b2202.jpg_750x200_b88bbab4.jpg",
+              "title": "去哪儿门票"
+          },
+          {
+              "id": "4",
+              "imgUrl": "http://img1.qunarzz.com/piao/fusion/1806/3c/c72a1ccd4d7b2202.jpg_750x200_b88bbab4.jpg",
+              "title": "去哪儿门票"
+          },
+          {
+              "id": "5",
+              "imgUrl": "http://img1.qunarzz.com/piao/fusion/1807/e0/b59ec01d6992e202.jpg_750x200_db9cc3d8.jpg",
+              "title": "去哪儿门票"
+          },
+          {
+              "id": "6",
+              "imgUrl": "http://img1.qunarzz.com/piao/fusion/1806/c5/8f384b861e4e9e02.jpg_750x200_29d574ba.jpg",
+              "title": "去哪儿门票"
+          },
+          {
+              "id": "7",
+              "imgUrl": "http://img1.qunarzz.com/piao/fusion/1807/ec/278a34afb59a0d02.jpg_750x200_3292a705.jpg",
+              "title": "去哪儿门票"
+          },
+          {
+              "id": "8",
+              "imgUrl": "http://img1.qunarzz.com/piao/fusion/1807/22/382624cbe97b0502.jpg_750x200_36a074d6.jpg",
+              "title": "去哪儿门票"
+          }
+      ],
+      "iconList": [
+          {
+              "id": "0001",
+              "imgUrl": "http://img1.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png",
+              "desc": "景点门票"
+          },
+          {
+              "id": "0002",
+              "imgUrl": "http://img1.qunarzz.com/piao/fusion/1804/ff/fdf170ee89594b02.png",
+              "desc": "北京必游"
+          },
+          {
+              "id": "0003",
+              "imgUrl": "http://img1.qunarzz.com/piao/fusion/1803/6a/45f595250c73d102.png",
+              "desc": "夏日玩水"
+          },
+          {
+              "id": "0004",
+              "imgUrl": "http://img1.qunarzz.com/piao/fusion/1803/20/831d62d2e1c7be02.png",
+              "desc": "文化古迹"
+          },
+          {
+              "id": "0005",
+              "imgUrl": "http://img1.qunarzz.com/piao/fusion/1803/76/eb88861d78fb9902.png",
+              "desc": "动植物园"
+          },
+          {
+              "id": "0006",
+              "imgUrl": "http://img1.qunarzz.com/piao/fusion/1803/6c/9e54a8540fee0102.png",
+              "desc": "故宫"
+          },
+          {
+              "id": "0007",
+              "imgUrl": "http://img1.qunarzz.com/piao/fusion/1804/5a/13ceb38dcf262f02.png",
+              "desc": "一日游"
+          },
+          {
+              "id": "0008",
+              "imgUrl": "http://img1.qunarzz.com/piao/fusion/1803/54/35899492b1302802.png",
+              "desc": "公园"
+          },
+          {
+              "id": "0009",
+              "imgUrl": "http://img1.qunarzz.com/piao/fusion/1803/95/8246f27355943202.png",
+              "desc": "游乐场"
+          },
+          {
+              "id": "00010",
+              "imgUrl": "http://img1.qunarzz.com/piao/fusion/1803/80/416c6ab3368d1f02.png",
+              "desc": "全部玩乐"
+          }
+      ],
+      "LikeList": [
+          {
+              "id": "1",
+              "tag": "https://img1.qunarzz.com/piao/fusion/1802/20/2ba6d10b17972e02.png",
+              "tagtips": "随买随用",
+              "url": "http://img1.qunarzz.com/sight/p0/1803/12/126471e0966aca5ba3.img.jpg_200x200_f1286016.jpg",
+              "text": "北京国际鲜花港",
+              "start": "5",
+              "comment": "18235",
+              "price": "29.9",
+              "address": "丰台区"
+          },
+          {
+              "id": "2",
+              "tag": "https://img1.qunarzz.com/piao/fusion/1802/20/2ba6d10b17972e02.png",
+              "tagtips": "随买随用",
+              "url": "http://img1.qunarzz.com/sight/p0/1709/e4/e48857f2ce5e53a7a3.img.jpg_200x200_8ee069fe.jpg",
+              "text": "远去的恐龙",
+              "start": "5",
+              "comment": "422",
+              "price": "140",
+              "address": "朝阳区"
+          },
+          {
+              "id": "3",
+              "tag": "https://img1.qunarzz.com/piao/fusion/1802/20/2ba6d10b17972e02.png",
+              "tagtips": "随买随用",
+              "url": "http://img1.qunarzz.com/sight/p0/1508/a5/4003f9dd7bebf61eccbf64046e26d487.water.jpg_200x200_7690e4cd.jpg",
+              "text": "北京欢乐谷",
+              "start": "5",
+              "comment": "55483",
+              "price": "66.6",
+              "address": "朝阳区",
+              "add": "👍小伙伴们都收藏了，去看看吧~"
+          },
+          {
+              "id": "4",
+              "tag": "https://img1.qunarzz.com/piao/fusion/1802/52/b9080e45b69b4f02.png",
+              "tagtips": "可定明天",
+              "url": "http://img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_200x200_1bc99086.jpg",
+              "text": "故宫",
+              "start": "5",
+              "comment": "249897",
+              "price": "20",
+              "address": "东城区",
+              "add": "🔥好评如潮，小伙伴热推景点~"
+          },
+          {
+              "id": "5",
+              "tag": "https://img1.qunarzz.com/piao/fusion/1802/20/2ba6d10b17972e02.png",
+              "tagtips": "随买随用",
+              "url": "http://img1.qunarzz.com/sight/p0/201308/08/41150dacc0e3a0c8c8d65eac.jpg_200x200_c62292e9.jpg",
+              "text": "北京动物园",
+              "start": "5",
+              "comment": "47770",
+              "price": "39.9",
+              "address": "西城区",
+              "add": "百余种动物，让你离自然更近"
+          },
+          {
+              "id": "6",
+              "tag": "https://img1.qunarzz.com/piao/fusion/1802/20/2ba6d10b17972e02.png",
+              "tagtips": "随买随用",
+              "url": "http://img1.qunarzz.com/sight/p0/201308/08/41150dacc0e3a0c8c8d65eac.jpg_200x200_c62292e9.jpg",
+              "text": "北京动物园",
+              "start": "5",
+              "comment": "47770",
+              "price": "39.9",
+              "address": "西城区",
+              "add": "百余种动物，让你离自然更近"
+          },
+          {
+              "id": "7",
+              "tag": "https://img1.qunarzz.com/piao/fusion/1802/20/2ba6d10b17972e02.png",
+              "tagtips": "随买随用",
+              "url": "http://img1.qunarzz.com/sight/p0/201308/08/41150dacc0e3a0c8c8d65eac.jpg_200x200_c62292e9.jpg",
+              "text": "北京动物园",
+              "start": "5",
+              "comment": "47770",
+              "price": "39.9",
+              "address": "西城区",
+              "add": "百余种动物，让你离自然更近"
+          },
+          {
+              "id": "8",
+              "tag": "https://img1.qunarzz.com/piao/fusion/1802/20/2ba6d10b17972e02.png",
+              "tagtips": "随买随用",
+              "url": "http://img1.qunarzz.com/sight/p0/201308/08/41150dacc0e3a0c8c8d65eac.jpg_200x200_c62292e9.jpg",
+              "text": "北京动物园",
+              "start": "5",
+              "comment": "47770",
+              "price": "39.9",
+              "address": "西城区",
+              "add": "百余种动物，让你离自然更近"
+          },
+          {
+              "id": "9",
+              "tag": "https://img1.qunarzz.com/piao/fusion/1802/20/2ba6d10b17972e02.png",
+              "tagtips": "随买随用",
+              "url": "http://img1.qunarzz.com/sight/p0/201308/08/41150dacc0e3a0c8c8d65eac.jpg_200x200_c62292e9.jpg",
+              "text": "北京动物园",
+              "start": "5",
+              "comment": "47770",
+              "price": "39.9",
+              "address": "西城区",
+              "add": "百余种动物，让你离自然更近"
+          },
+          {
+              "id": "10",
+              "tag": "https://img1.qunarzz.com/piao/fusion/1802/20/2ba6d10b17972e02.png",
+              "tagtips": "随买随用",
+              "url": "http://img1.qunarzz.com/sight/p0/201308/08/41150dacc0e3a0c8c8d65eac.jpg_200x200_c62292e9.jpg",
+              "text": "北京动物园",
+              "start": "5",
+              "comment": "47770",
+              "price": "39.9",
+              "address": "西城区",
+              "add": "百余种动物，让你离自然更近"
+          }
+      ],
+      "weekendList": [
+          {
+              "id": "0001",
+              "imgUrl": "http://img1.qunarzz.com/sight/source/1606/85/c6b6bad1b977e.jpg_r_640x214_5c638941.jpg",
+              "title": "漂流勇进，烧烤露营",
+              "desc": "轻松水上漂，任我乐逍遥"
+          },
+          {
+              "id": "0002",
+              "imgUrl": "http://img1.qunarzz.com/sight/source/1505/aa/7baaf8a851d221.jpg_r_640x214_1431200f.jpg",
+              "title": "北京必游TOP10",
+              "desc": "来北京必去的景点非这些地方莫属"
+          },
+          {
+              "id": "0003",
+              "imgUrl": "http://img1.qunarzz.com/sight/source/1505/9e/21df651e19af5d.jpg_r_640x214_3ea5bb38.jpg",
+              "title": "寻找北京的皇城范儿",
+              "desc": "数百年的宫廷庙宇，至今依旧威严霸气"
+          },
+          {
+              "id": "0004",
+              "imgUrl": "http://img1.qunarzz.com/sight/source/1505/ce/bc89bc2f0e33ea.jpg_r_640x214_3e408453.jpg",
+              "title": "学生最爱的博物馆",
+              "desc": "周末干嘛？北京很多博物馆已经免费开放啦"
+          },
+          {
+              "id": "0005",
+              "imgUrl": "http://img1.qunarzz.com/sight/source/1505/53/02091f1ee43d0a.jpg_r_640x214_2e3256b1.jpg",
+              "title": "北京清凉避暑胜地",
+              "desc": "到大自然中享受“天然空调”的清凉"
+          }
+      ],
+      "hotListmap": [
+          {
+              "id": "1",
+              "url": "http://img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_150x150_06cb3e52.jpg",
+              "title": "故宫",
+              "tips": "http://img1.qunarzz.com/piao/fusion/1710/ab/159673b63e6ca702.png",
+              "price": 20
+          },
+          {
+              "id": "2",
+              "url": "http://img1.qunarzz.com/sight/p0/1708/2b/2b3b94de99c0a425a3.img.jpg_150x150_2dec3e78.jpg",
+              "title": "八达岭长城",
+              "tips": "http://img1.qunarzz.com/piao/fusion/1710/2d/36d0c4adaebbbc02.png",
+              "price": 25
+          },
+          {
+              "id": "3",
+              "url": "http://img1.qunarzz.com/sight/p0/1501/40/40b2b6c951b28fdd.water.jpg_150x150_8a63d940.jpg",
+              "title": "水立方",
+              "tips": "http://img1.qunarzz.com/piao/fusion/1710/67/edc47ffef9e96b02.png",
+              "price": 35
+          },
+          {
+              "id": "4",
+              "url": "http://img1.qunarzz.com/sight/p0/1704/d6/d62a708bc69472f5a3.img.jpg_150x150_54ba6c62.jpg",
+              "title": "十渡聚龙湾玻璃栈道",
+              "price": 35
+          },
+          {
+              "id": "5",
+              "url": "http://img1.qunarzz.com/sight/p0/1505/d2/d274c92de14c93da.water.jpg_150x150_2747e538.jpg",
+              "title": "颐和园",
+              "price": 20
+          },
+          {
+              "id": "6",
+              "url": "http://img1.qunarzz.com/sight/p0/201306/13/bdf22f69fab0ee4ec8d65eac.jpg_150x150_35b4b15f.jpg",
+              "title": "八达岭长城缆车",
+              "price": 160
+          },
+          {
+              "id": "7",
+              "url": "http://img1.qunarzz.com/sight/p0/1508/a5/4003f9dd7bebf61eccbf64046e26d487.water.jpg_150x150_27594131.jpg",
+              "title": "北京欢乐谷",
+              "price": 66.6
+          },
+          {
+              "id": "8",
+              "url": "http://img1.qunarzz.com/sight/p0/201405/30/63494597d8a8346abd77cc9e1cd2ee79.jpg_150x150_7037ca72.jpg",
+              "title": "定陵",
+              "price": 250
+          },
+          {
+              "id": "9",
+              "url": "http://img1.qunarzz.com/sight/p0/1505/f5/f5f45e1a83537bcb.water.jpg_150x150_2a3c9117.jpg",
+              "title": "圆明园",
+              "price": 10
+          },
+          {
+              "id": "10",
+              "url": "http://img1.qunarzz.com/sight/p0/201405/23/0265195fc4b7913a758674357c3cc8f6.jpg_150x150_ba1070d2.jpg",
+              "title": "北京欢乐水魔方",
+              "price": 111
+          }
+      ]
+  }
+}
