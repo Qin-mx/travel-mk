@@ -41,7 +41,7 @@ export default {
   },
   methods: {
     GetCityList () {
-      this.axios.get('/api/city.json').then(res => {
+      this.axios.get('/api/185fxk').then(res => {
         if (res.data.ret && res.data) {
           this.handleCityList(res)
         }
