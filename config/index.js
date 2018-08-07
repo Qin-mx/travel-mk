@@ -17,7 +17,7 @@ module.exports = {
         changeOrigin: true,
         pathRewrite:{
           // '^/api': '/static/mock'
-          '^/api':'/api'
+          '^/api':' '
         }
       }
     },

@@ -71,7 +71,8 @@ export default {
   },
   methods: {
     getList () {
-      this.axios.get('/api/19xqqw?city=' + this.city).then(res => {
+      let url = process.env.NODE_ENV === 'development' ? '/api/' : 'https://api.myjson.com/bins/'
+      this.axios.get(url + '19xqqw?city=' + this.city).then(res => {
         if (res.data.data && res.data.ret) {
           this.swiperSlides = res.data.data.swiperSlides
           this.iconList = res.data.data.iconList

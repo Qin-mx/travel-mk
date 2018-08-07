@@ -41,7 +41,8 @@ export default {
   },
   methods: {
     GetCityList () {
-      this.axios.get('/api/185fxk').then(res => {
+      let url = process.env.NODE_ENV === 'development' ? '/api/' : 'https://api.myjson.com/bins/'
+      this.axios.get(url + '185fxk').then(res => {
         if (res.data.ret && res.data) {
           this.handleCityList(res)
         }
