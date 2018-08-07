@@ -72,6 +72,7 @@ export default {
   methods: {
     getList () {
       let url = process.env.NODE_ENV === 'development' ? '/api/' : 'https://api.myjson.com/bins/'
+      console.log(process.env.NODE_ENV)
       this.axios.get(url + '19xqqw?city=' + this.city).then(res => {
         if (res.data.data && res.data.ret) {
           this.swiperSlides = res.data.data.swiperSlides
