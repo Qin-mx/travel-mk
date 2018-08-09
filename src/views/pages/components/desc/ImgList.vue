@@ -52,7 +52,7 @@ export default {
     background: #000;
     display: flex;
     flex-direction: column;
-    justify-content: center ;
+    // justify-content: center ;
 }
 .show__img-wrapper{
     width: 100%;
